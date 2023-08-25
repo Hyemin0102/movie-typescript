@@ -1,9 +1,25 @@
 import React from "react";
+import { Movie } from "../Api/HomePage";
 
-export const MovieCard = () =>{
+type MovieCardProps = {
+  movie: Movie
+}
+
+export const MovieCard = ({movie}:MovieCardProps) =>{
+  //console.log('bb',props)
+  const { title, overview, poster_path, vote_average } = movie;
   return(
     <div>
-      영화 정보 보여주는 영화 카드입니다.
+      <h4>{title}</h4>
+      <p>
+        {overview}
+      </p>
+      <p>
+        {poster_path}
+      </p>
+      <p>
+        {vote_average}
+      </p>
     </div>
   )
 }
