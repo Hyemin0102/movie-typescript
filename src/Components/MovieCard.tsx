@@ -1,5 +1,5 @@
 import React from "react";
-import { Movie } from "../Api/HomePage";
+import { Movie } from "./HomePage";
 
 type MovieCardProps = {
   movie: Movie
