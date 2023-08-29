@@ -1,4 +1,4 @@
-## Movie-app
+# Movie-app
 타입스크립트를 사용해 영화 오픈 api를 연동한 현재 상영작, 인기 상영작을 알려주는 토이 프로젝트
 
 <br>
@@ -19,6 +19,7 @@ typescript, open API
 - [typescript 프로젝트 생성](#typescript-프로젝트-생성)
 - [영화 Open API 가져오기](#영화-Open-API-가져오기)
 ---
+
 <br>
 
 ### typescript 프로젝트 생성
