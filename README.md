@@ -10,6 +10,11 @@
 
 <br>
 
+## ⚙개발 환경
+typescript, open API
+
+<br>
+
 ## 🧾목차
 - [typescript 프로젝트 생성](#typescript-프로젝트-생성)
 - [영화 Open API 가져오기](#영화-Open-API-가져오기)
