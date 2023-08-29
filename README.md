@@ -266,5 +266,5 @@ export const CategoryButton = ({category, onClick, isSelected}:CategoryButtonPro
 ```
 이렇게 하면 카테고리 선택에 따라 해당 api 정보가 불려오게 된다!
 
-이제 api 연동 기능 구현은 끝났고, 리덕스를 활용해 UI를 예쁘게 다듬어 볼 예정이다. 
+이제 api 연동 기능 구현은 끝났고, 리덕스를 활용해 movie, category 정보를 전역적으로 다루고 더 세밀한 UI 구성을 할 예정이다.
 
