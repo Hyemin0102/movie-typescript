@@ -6,10 +6,8 @@ type CategoryButtonProps = {
   category: Category,
   //onClick 추가, void 사용 => 인덱스를 받지만 return값은 없음 의미
   onClick: (index:number) => void,
-  isSelected: boolean
+  isSelected: boolean,
 }
-
-
 
 export const CategoryButton = ({category, onClick, isSelected}:CategoryButtonProps) =>{
   const {id, lable,image} = category;
