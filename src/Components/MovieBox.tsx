@@ -1,5 +1,5 @@
-import { CategoryButton } from "./CategoryButton"
-import { Category, Movie } from "./HomePage"
+
+import { Movie } from "./HomePage"
 import { MovieCard } from "./MovieCard"
 
 type MovieBoxProps = {

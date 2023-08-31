@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { MovieCard } from "../Components/MovieCard";
-import { CategoryButton } from "../Components/CategoryButton";
+import { useEffect, useState } from "react";
 import { CategoryBox } from "./CategoryBox";
 import { MovieBox } from "./MovieBox";
 
