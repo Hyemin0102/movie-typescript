@@ -21,7 +21,7 @@ react, typescript, open API
 ## 🧾목차
 - [typescript 프로젝트 생성](#typescript-프로젝트-생성)
 - [영화 Open API 가져오기](#영화-Open-API-가져오기)
-- [카테고리별 API 연동, 선택 카테고리 css 적용](#카테고리-별-API연동)
+- [카테고리 별 API 연동(카테고리 css 적용)](#카테고리-별-API-연동(선택-카테고리-css-적용))
 ---
 
 <br>
@@ -170,7 +170,7 @@ export const MovieCard = ({movie}:MovieCardProps) =>{
 <br>
 <hr>
 
-### 💻카테고리별 API 연동, 선택 카테고리 css 적용
+### 💻카테고리 별 API 연동(선택 카테고리 css 적용)
 카테고리를 관리하는 useState를 사용해 카테고리의 인덱스를 구하고 그 정보로 데이터를 불러오는 기능과 클릭한 카테고리에 따라 다른 css 를 적용하는 기능을 구현할 것이다. 
 
 **HomePage.tsx**
