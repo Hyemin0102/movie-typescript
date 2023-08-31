@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { MovieCard } from "../Components/MovieCard";
 import { CategoryButton } from "../Components/CategoryButton";
+import { CategoryBox } from "./CategoryBox";
+import { MovieBox } from "./MovieBox";
 
 
 const Access_Token='eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YTljMGQ5NWJjNmQyMjZhNzg4ODE2MzY1NGQ2NTE3MyIsInN1YiI6IjY0ZTg0ZjkyMWZlYWMxMDBmZTVjNzljOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.WQPQd46Ef262NSd2ekBm4Mhca5KxlwKtMhzfPfGsrZE';
@@ -53,6 +55,7 @@ export const HomePage = () =>{
     .then(response => response.json())
     .then(data => setMovies(data.results))
     .catch(err => console.error(err));
+
     setIsLoading(false);
   }
   
@@ -62,15 +65,12 @@ export const HomePage = () =>{
   
   return(
     <div>
-      {CategoryList.map((category)=>(
-        <CategoryButton 
-          key={category.id} 
-          category={category} 
-          onClick={setCategory}
-          isSelected={category.id === categoryIndex}/>
-      ))}
+      <CategoryBox 
+        CategoryList={CategoryList}
+        categoryIndex={categoryIndex}
+        onSetCategory={setCategory}/>
       {isLoading && <p>데이터를 불러오는 중입니다...</p>}
-      {!isLoading && movies.map((movie)=><MovieCard key={movie.id} movie={movie}/>)}
+      {!isLoading && <MovieBox movies={movies}/>}
     </div>
   )
 };

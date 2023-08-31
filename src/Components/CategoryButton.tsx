@@ -13,11 +13,13 @@ export const CategoryButton = ({category, onClick, isSelected}:CategoryButtonPro
   const {id, lable,image} = category;
 
   return(
-    <div className={`${isSelected ? 'font-bold' : 'opacity-50'} `} 
-      onClick={()=>onClick(id)}> {/* 클릭 시 카테고리의 id보냄 */}
-      <img src={image} alt="이미지" 
-        className="rounded-full w-28 h-28 object-cover"/>
-      <div className="text-center">{lable}</div>
+    <div className="flex mx-5">
+      <div className={`${isSelected ? 'font-bold' : 'opacity-50'} `} 
+        onClick={()=>onClick(id)}> {/* 클릭 시 카테고리의 id보냄 */}
+        <img src={image} alt="이미지" 
+          className="rounded-full w-28 h-28 object-cover"/>
+        <div className="text-center">{lable}</div>
+      </div>
     </div>
   )
 }

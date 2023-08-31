@@ -14,9 +14,8 @@ export const MovieCard = ({movie}:MovieCardProps) =>{
 
 
   return(
-    <div className="space-x-4 
-    border-solid border border-lime-600">
-      <div className="w-36">
+    <div className=" w-1/5 p-7">
+      <div className="">
         <img src={`${Image_url}${poster_path}`} alt="이미지" 
         className="rounded-xl w-full object-cover"/>
       </div>

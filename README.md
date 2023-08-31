@@ -11,7 +11,7 @@
 <br>
 
 ## ⚙개발 환경
-typescript, open API
+react, typescript, open API, react-redux
 
 <br>
 
