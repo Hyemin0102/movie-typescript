@@ -4,6 +4,8 @@
 <br>
 
 ## 🔎프로젝트 소개
+https://hyemin0102.github.io/movie-typescript/
+
 타입스크립트를 공부하며 open api를 활용한 토이 프로젝트. 원래 프로젝트 진행 시 UI를 먼저 구상 후 기능 구현을 하지만 이번에는 api먼저 연동 후 UI를 만들 예정이다.
 
 공부하며 만드는 프로젝트 답게 프로젝트 과정을 세세히 기록해보겠다.
@@ -11,7 +13,7 @@
 <br>
 
 ## ⚙개발 환경
-react, typescript, open API, react-redux
+react, typescript, open API
 
 
 <br>
@@ -267,5 +269,4 @@ export const CategoryButton = ({category, onClick, isSelected}:CategoryButtonPro
 ```
 이렇게 하면 카테고리 선택에 따라 해당 api 정보가 불려오게 된다!
 
-이제 api 연동 기능 구현은 끝났고, 리덕스를 활용해 movie, category 정보를 전역적으로 다루고 더 세밀한 UI 구성을 할 예정이다.
 
