@@ -269,4 +269,6 @@ export const CategoryButton = ({category, onClick, isSelected}:CategoryButtonPro
 ```
 이렇게 하면 카테고리 선택에 따라 해당 api 정보가 불려오게 된다!
 
+이제 UI 수정과 JWT를 활용해 로그인 기능을 구현할 예정이다. 
+
 
