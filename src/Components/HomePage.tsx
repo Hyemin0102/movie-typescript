@@ -22,7 +22,7 @@ export type Category = {
 }
 
 const CategoryList = [
-  {id: 0, lable: '현재 상영작', url:'/now_playing', image:'./now_playing.AVIF'},
+  {id: 0, lable: '현재 상영작', url:'/now_playing', image:'./now_playing.jpg'},
   {id: 1, lable: '인기 상영작', url:'/popular', image:'./popular.jpg'},
   {id: 2, lable: 'Top Lated', url:'/top_rated', image:'./top_lated.jpg'},
   {id: 3, lable: 'Upcoming', url:'/upcoming', image:'./upcoming.jpg'},
