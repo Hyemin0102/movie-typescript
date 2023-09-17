@@ -14,7 +14,7 @@ export const MovieCard = ({movie}:MovieCardProps) =>{
 
 
   return(
-    <div className=" w-1/5 p-7">
+    <div className=" p-5 basis-64 grow">
       <div className="">
         <img src={`${Image_url}${poster_path}`} alt="이미지" 
         className="rounded-xl w-full object-cover"/>

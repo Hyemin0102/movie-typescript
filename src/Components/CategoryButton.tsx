@@ -13,7 +13,7 @@ export const CategoryButton = ({category, onClick, isSelected}:CategoryButtonPro
   const {id, lable,image} = category;
 
   return(
-    <div className="flex mx-5">
+    <div className="flex mx-5 cursor-pointer">
       <div className={`${isSelected ? 'font-bold' : 'opacity-50'} `} 
         onClick={()=>onClick(id)}> {/* 클릭 시 카테고리의 id보냄 */}
         <img src={image} alt="이미지" 
