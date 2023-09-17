@@ -13,7 +13,7 @@ https://hyemin0102.github.io/movie-typescript/
 <br>
 
 ## ⚙개발 환경
-react, typescript, open API
+react, typescript, open API, tailwind CSS
 
 
 <br>
