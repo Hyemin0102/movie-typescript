@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Pretendard";
+  src: url(./fonts/Pretendard-Medium.woff);
+}
 
 body {
   margin: 0;

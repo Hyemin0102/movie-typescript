@@ -14,15 +14,15 @@ export const MovieCard = ({movie}:MovieCardProps) =>{
 
 
   return(
-    <div className=" p-5 basis-64 grow">
+    <div className=" p-5 basis-80 grow">
       <div className="">
         <img src={`${Image_url}${poster_path}`} alt="이미지" 
         className="rounded-xl w-full object-cover"/>
       </div>
-      <div>
-        <div className=" text-xl font-bold mb-2">{title}</div>
-        <div className=" text-gray-800 line-clamp-3">{overview}</div>
-        <div className=" text-gray-600">{`평점 : ${vote_average}`}</div>
+      <div className=" p-2">
+        <div className=" text-xl font-bold my-2">{title}</div>
+        <div className=" text-gray-800 line-clamp-3 mb-2">{overview}</div>
+        <div className=" text-gray-600 font-bold">{`⭐${vote_average}`}</div>
       </div>
     </div>
   )
