@@ -1,19 +1,19 @@
 # Movie-app
-타입스크립트를 사용해 영화 오픈 api를 연동한 현재 상영작, 인기 상영작을 알려주는 토이 프로젝트
+영화 Open api를 연동해 현재 상영작, 인기 상영작 등 카테고리 별 영화 정보 분류되어 있는 토이 프로젝트
 
 <br>
 
 ## 🔎프로젝트 소개
 https://hyemin0102.github.io/movie-typescript/
 
-타입스크립트를 공부하며 open api를 활용한 토이 프로젝트. 원래 프로젝트 진행 시 UI를 먼저 구상 후 기능 구현을 하지만 이번에는 api먼저 연동 후 UI를 만들 예정이다.
+typescript를 공부하며 open api를 활용한 토이 프로젝트로 한국 기준의 [현재 상영작, 인기 상영작, 별점 높은 상영작, 상영 예정작] 총 4개의 카테고리로 영화를 분류해 카테고리별 화면을 구현했다.
 
-공부하며 만드는 프로젝트 답게 프로젝트 과정을 세세히 기록해보겠다.
+tailwind CSS를 활용해 스타일링 하였으며 반응형까지 구현하였고 공부하며 만드는 프로젝트 답게 구현 과정을 세세히 기록할 예정이다.
 
 <br>
 
 ## ⚙개발 환경
-react, typescript, open API, tailwind CSS
+react, typescript, open API(tmdb), tailwind CSS
 
 
 <br>
@@ -269,6 +269,11 @@ export const CategoryButton = ({category, onClick, isSelected}:CategoryButtonPro
 ```
 이렇게 하면 카테고리 선택에 따라 해당 api 정보가 불려오게 된다!
 
-이제 UI 수정과 JWT를 활용해 로그인 기능을 구현할 예정이다. 
+이제 tailwind CSS로 font적용과 반응형을 완료하고 마무리하였다.
+
+<br>
+
+## 😊프로젝트를 마치며
+처음 typescript로 제작한 간단한 프로젝트인데 리액트와 같이 사용할 때 어떻게 props를 전달하고 type을 지정하는지에 대해 기본적인 원리를 배울 수 있었다. 부모 컴포넌트에서 자식 컴포넌트로 props를 받아올 때 {}를 사용해 넘겨준 props 이름 그대로 가져오되 type을 지정해주고 넘겨받은 props는 구조분해 할당으로 받아온 데이터 중 사용 원하는 데이터를 가독성 좋게 사용할 수 있다. 이번 프로젝트는 typescript의 기초와 실제 사용했을 때 어떻게 적용이 되는지 궁금해서 만들어보았는데 다음 프로젝트는 typescript의 장점을 활용해 기능이 더 많이 들어간 프로젝트를 구현해보고싶다!!
 
 
